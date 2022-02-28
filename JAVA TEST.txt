@@ -1,0 +1,149 @@
+NAME: NISHMA POOJARI
+BATCH CODE: B9259
+
+First code
+
+import java.util.Scanner;
+class user{
+    String nme;
+    int no;
+    private int bal;
+      int current;
+    Scanner sc=new Scanner(System.in);
+    public void setbal(int val)
+    {
+        bal=val;
+    }
+    public int get_balance()
+    {
+        return bal;
+    }
+    public void acce()
+    {
+        System.out.println("Enter Your Name:");
+        nme=sc.nextLine();
+        System.out.println("Enter Your Account Number");
+        no=sc.nextInt();
+    }
+    public void transaction(){
+      
+        System.out.println("purchase coconut 20");
+        current=bal-(44*5);
+        System.out.println("Bal After First Transaction "+current);
+ System.out.println("purchase  2 black cover of price rupees 650 ");
+     current=current-650;
+     System.out.println("Bal After second Transaction "+current);
+     System.out.println("purchase  denim of price rupees 500 ");
+     current=current-500;
+     System.out.println("Bal After third Transaction "+current);
+       System.out.println("purchase  new mobile phone of price rupees 580 ");
+     current=current-580;
+     System.out.println("Bal After fourth Transaction "+current);
+       System.out.println("purchase  car of price rupees 199 ");
+     current=current-199;
+     System.out.println("Bal After fifth Transaction "+current);
+     
+       System.out.println("purchase vegetables of price rupees 1500 ");
+     current=current-1500;
+     System.out.println("Bal After sixth Transaction "+current);
+
+        System.out.println("purchase games  ticket of price rupees 299 ");
+     current=current-299;
+     System.out.println("Bal After seventh Transaction "+current);
+    }
+    
+    
+}
+
+public class first1 {
+    public static void main(String arr[])
+    {
+        
+        user u1=new user();
+        u1.setbal(250000);
+        u1.acce();
+        u1.transaction();
+        System.out.println("name: "+u1.nme);
+        System.out.println("account number: "+u1.no);        
+        System.out.println("Intial bal: "+u1.get_balance());
+        System.out.println("Bal After 10 transctions: "+u1.current);
+        
+    }
+}
+
+Second code:
+public class ReverseNumber 
+{  
+public static void main(String[] args)   
+{  
+int number = 987654, reverse = 0;  
+}
+}
+Public class rev_num extends ReverseNumber
+while(number != 0)   
+{  
+int remainder = number % 10;  
+reverse = reverse * 10 + remainder;  
+number = number/10;  
+}  
+System.out.println("The reverse of the given number is: " + reverse);  
+}  
+}  
+
+
+
+
+
+
+Third code
+import java.util.Scanner;
+abstract class example{
+    abstract void fact();
+    abstract void prime();
+}
+public class third extends example {
+
+  Scanner sc=new Scanner(System.in);
+    void fact(){
+        int no,fact=1;
+        System.out.println("Enter a number ");
+        no=sc.nextInt();
+        for(int i=1;i<=no;i++)
+        {
+            fact=fact*i;
+        }
+        System.out.println("Factorial of "+no+" is "+fact);
+    }
+    void prime()
+{
+
+        int c=0;
+        for(int i=2;i<no;i++)
+        {
+            if(no%i==0)
+            {
+                c=1;
+                break;
+            }
+        }
+        if(c==0)
+        {
+            System.out.println("Number Is a Prime Number");
+        }
+        else{
+        
+            System.out.println("Number Is not a Prime Number");
+        }
+    }
+    public static void main(String arr[])
+    {
+        third t1=new third();
+        t1.prime();
+        t1.fact();
+        
+    }
+}
+Fourth code:
+import java.util.Scanner;
+class Array
+{
